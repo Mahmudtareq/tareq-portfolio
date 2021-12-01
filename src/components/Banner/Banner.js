@@ -2,6 +2,8 @@ import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import './Banner.css';
 import banner from '../../image/banner.jpg'
+import { Link, NavLink } from 'react-router-dom';
+import resume from '../../image/about/TAREQ MAHMUD RESUME.pdf'
 
 const Banner = () => {
     return (
@@ -14,7 +16,9 @@ const Banner = () => {
                         <h5 className="text-start my-3 text-red">Front End Developer</h5>
                         <p className="text-start">I'm developer focused on crafting user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
                         <Button className="btn btn-primary px-3">Hire me</Button>
-                        <Button className="btn btn-primary ms-4">Download Resume</Button>
+                        <Button>
+                            <NavLink to={resume} target="_blank" download="TAREQ MAHMUD RESUME.pdf"> Download Here </NavLink>
+                        </Button>
                     </div>
                     <div className="col-12 col-md-6 col-lg-6 mt-2">
                        <img className="img-fluid" src={banner} alt="" />

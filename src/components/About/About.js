@@ -1,49 +1,38 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
 import './About.css';
 import  tareq from '../../image/tareq1.jpg'
 
 const About = () => {
     return (
-        <div>
-            
-
-            <Container className="my-5">
-                <h2 className="text-start">About me</h2>
-                <p className="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, egestas. Id fermentum nullam ipsum massa.</p>
-                <Row>
-                    <Col xs={12} md={5} lg={5}>
-                        <img className="img-fluid" src={tareq} alt="" />
-                    </Col>
-                    <Col xs={12} md={7} lg={7}>
-                        <div>
-                            <h1>I'm Tareq Mahmud</h1>
-                            <h6 className="">A Lead Visual Artist based in America</h6>
-
-                            <p className="text-start">I design and develop services for customers specializing creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through meaningful interactions. Check out my Portfolio</p>
+        <div className="about component__space" id="about">
+             <h1 className="about__heading text-center">About Me</h1>
+            <div className="container">
+                <div className="row">
+                    <div className="col__2">
+                        <img src={tareq} alt="" className="about__img" />
+                    </div>
+                    <div className="col__2">
+                        <div className="about__meta">
+                           <h1 className="text-about">Hi My Self Tareq Mahmud</h1>
+                            <p className="about__text p__color">
+                                 I am front End react developer specializing in React js , I  
+                            </p>
+                            <p className="about__text p__color">
+                                I have some project based experience using  HTML ,CSS, Javascript , React js , Node Js , Express Js, Mongo DB and  others Technology 
+                            </p>
                         </div>
+                        <div>
+                            <h1 className="text-about">Education </h1>
                         
-                        <div>
-                            <h2>Personal Information</h2>
-                            <Row>
-                                <Col xs={12} md={6} lg={6} >
-                                    hello
-                                </Col>
-                                <Col xs={12} md={6} lg={6}>
-                                    hello
-                                </Col>
-                            </Row>
-
+                            <h3>B.Tech in Computer Science And Engineering</h3>
+                            <h4>Lovely Professional University </h4>
+                            <h5>Punjab, India</h5>
+                             
                         </div>
-                      
-                    </Col>
-                </Row>
-            </Container>
-
-
-
-          
-            
+                       
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
