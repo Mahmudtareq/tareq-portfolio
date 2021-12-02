@@ -2,18 +2,22 @@ import Button from 'react-bootstrap/Button';
 import React from 'react';
 import { Col, Container, Form, Row } from 'react-bootstrap';
 import './ContactMe.css';
-// import contact from '../../image/contact1.jpg'
+import contact2 from '../../image/contact2.png';
 
 const ContactMe = () => {
     
     return (
         <div className="my-5" id="contact">
+           
             <Container className="my-5">
                 <div className="heading my-5">
-                    <h1 className="heading">Contact With Me</h1>
+                    <h1 className="text-center text-header">Contact With Me</h1>
                 </div>
 
                 <Row className=" g-1">
+                    <Col className="gx-2" xs={12} md={5} lg={5}>
+                        <img className="img-fluid mt-5" src={ contact2} alt="" />
+                     </Col>
                     <Col className="gx-2" xs={12} md={6} lg={6}>
                         <div className=" p-3 shadow" >
                         <Form action="https://formsubmit.co/tareqlpu5@gmail.com" method="POST">

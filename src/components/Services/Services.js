@@ -7,7 +7,7 @@ const Services = () => {
         <div className="service component__space" id="services">
 
             <div className="heading">
-                <h1 className="heading">My Awesome Service</h1>
+                <h1 className="text-header text-center mb-5">My Awesome Service</h1>
             </div>
 
             <div className="container">

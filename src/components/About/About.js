@@ -5,7 +5,7 @@ import  tareq from '../../image/tareq1.jpg'
 const About = () => {
     return (
         <div className="about component__space" id="about">
-             <h1 className="about__heading text-center">About Me</h1>
+             <h1 className="text-header mb-3 text-center">About Me</h1>
             <div className="container">
                 <div className="row">
                     <div className="col__2">

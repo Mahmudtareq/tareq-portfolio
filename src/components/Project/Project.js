@@ -1,5 +1,6 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, Container, Row, Col,NavLink } from 'react-bootstrap';
 import banner1 from '../../image/Assingnment-12/banner.png';
 import banner2 from '../../image/Assingnment-11/banner.png';
@@ -9,7 +10,7 @@ const Project = () => {
     return (
       <div id="project">
         <div className="heading">
-                <h1 className="heading my-3">My Awesome Work</h1>
+                <h1 className="text-header text-center mb-5">My Awesome Work</h1>
             </div>
         <Container>
         
@@ -29,7 +30,9 @@ const Project = () => {
                           <NavLink  href="https://smart-watches-8176d.web.app/" target="_blank">Live Site</NavLink>
                           <NavLink href="https://github.com/Mahmudtareq/smart-watch-client-side"  target="_blank">Client Side Code</NavLink>
                           <NavLink href="https://github.com/Mahmudtareq/smart-watch-server-side"  target="_blank">Server Side Code</NavLink>
-                          <Button  className="btn btn primary">Explore</Button>
+                           <Button className="btn btn primary">
+                            <Link to="/project1">Explore </Link>
+                          </Button>
                 </Card.Body>
                       </Card>
                     </Col>
@@ -45,8 +48,11 @@ const Project = () => {
                         <Card.Body>
                           <NavLink  href="https://tour-and-traveling.web.app/" target="_blank">Live Site</NavLink>
                           <NavLink href="https://github.com/Mahmudtareq/booking-toure-client-side"  target="_blank">Client Side Code</NavLink>
-                          <NavLink href="https://github.com/Mahmudtareq/booking-toure-server-side"  target="_blank">Server Side Code</NavLink>
-                          <Button  className="btn btn primary">Explore</Button>
+                  <NavLink href="https://github.com/Mahmudtareq/booking-toure-server-side" target="_blank">Server Side Code</NavLink>
+                 
+                  <Button className="btn btn primary">
+                     <Link to="/project2">Explore </Link>
+                   </Button>
                 </Card.Body>
                       </Card>
                     </Col>
@@ -67,7 +73,9 @@ const Project = () => {
                         <Card.Body>
                           <NavLink  href="https://health-revolation.web.app/" target="_blank">Live Site</NavLink>
                           <NavLink href="https://github.com/Mahmudtareq/health-care-diagnostic"  target="_blank">Client Side Code</NavLink>
-                          <Button  className="btn btn primary">Explore</Button>
+                             <Button className="btn btn primary">
+                            <Link to="/project3">Explore </Link>
+                          </Button>
                 </Card.Body>
                       </Card>
                     </Col>
